@@ -103,9 +103,29 @@ export const WBNB = {
   ),
 }
 
+export const WCORE = {
+  [ChainId.CORE_DAO]: new Token(
+    ChainId.CORE_DAO,
+    '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c',
+    18,
+    'WCORE',
+    'Wrapped CORE',
+    'https://www.binance.org'
+  ),
+  [ChainId.CORE_DAO_TESTNET]: new Token(
+    ChainId.CORE_DAO_TESTNET,
+    '0xae13d989daC2f0dEbFf460aC112a837C89BAa7cd',
+    18,
+    'WBNB',
+    'Wrapped CORE',
+    'https://www.binance.org'
+  ),
+}
+
 export const WNATIVE = {
   // [ChainId.ETHEREUM]: WETH9[ChainId.ETHEREUM],
   // [ChainId.RINKEBY]: WETH9[ChainId.RINKEBY],
+  [ChainId.CORE_DAO_TESTNET]: WCORE[ChainId.CORE_DAO_TESTNET],
   [ChainId.BSC]: WBNB[ChainId.BSC],
   [ChainId.BSC_TESTNET]: WBNB[ChainId.BSC_TESTNET],
 }

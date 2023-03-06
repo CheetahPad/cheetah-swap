@@ -25,6 +25,36 @@ export const avalandche: Chain = {
     },
   },
 }
+export const coreDao: Chain = {
+  id: 43114,
+  name: 'Avalanche C-Chain',
+  network: 'avalanche',
+  rpcUrls: {
+    default: 'https://rpc.ankr.com/avalanche',
+  },
+  nativeCurrency: { name: 'Avalanche', symbol: 'AVAX', decimals: 18 },
+  blockExplorers: {
+    default: {
+      name: 'snowtrace',
+      url: 'https://snowtrace.io/',
+    },
+  },
+}
+export const coreDaoTestnet: Chain = {
+  id: 43114,
+  name: 'Core Chain TestNet',
+  network: 'coredao',
+  rpcUrls: {
+    default: 'https://rpc.test.btcs.network/',
+  },
+  nativeCurrency: { name: 'tCORE', symbol: 'tCORE', decimals: 18 },
+  blockExplorers: {
+    default: {
+      name: 'corescan',
+      url: 'https://scan.test.btcs.network/',
+    },
+  },
+}
 
 export const avalandcheFuji: Chain = {
   id: 43113,

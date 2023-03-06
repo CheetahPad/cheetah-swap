@@ -1,4 +1,4 @@
-import { ChainId, Token, WBNB } from '@pancakeswap/sdk'
+import { ChainId, Token, WBNB, WCORE } from '@pancakeswap/sdk'
 
 const CAKE_MAINNET = new Token(
   ChainId.BSC,
@@ -2334,6 +2334,28 @@ export const bscTokens = {
 
 export const bscTestnetTokens = {
   wbnb: WBNB[ChainId.BSC_TESTNET],
+  cake: CAKE_TESTNET,
+  busd: BUSD_TESTNET,
+  syrup: new Token(
+    ChainId.BSC_TESTNET,
+    '0xfE1e507CeB712BDe086f3579d2c03248b2dB77f9',
+    18,
+    'SYRUP',
+    'SyrupBar Token',
+    'https://ovenswapfi.com/',
+  ),
+  bake: new Token(
+    ChainId.BSC_TESTNET,
+    '0xE02dF9e3e622DeBdD69fb838bB799E3F168902c5',
+    18,
+    'BAKE',
+    'Bakeryswap Token',
+    'https://www.bakeryswap.org/',
+  ),
+}
+// todo
+export const coreTestnetTokens = {
+  wbnb: WCORE[ChainId.CORE_DAO_TESTNET],
   cake: CAKE_TESTNET,
   busd: BUSD_TESTNET,
   syrup: new Token(
